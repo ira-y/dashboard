@@ -1,0 +1,55 @@
+<div class="table-header-row">
+  <div class="header-cell">Originator</div>
+  <div class="header-cell">Client/Line</div>
+  <div class="header-cell">Type</div>
+  <div class="header-cell">Status</div>
+  <div class="header-cell">Created</div>
+</div>
+
+@for (task of tasks; track $index) {
+  <div class="table-data-row">
+    <div class="data-cell">
+      <div class="user-avatar" [attr.data-initials]="task.originator.initials">
+        {{ task.originator.initials }}
+      </div>
+      <span class="user-name">{{ task.originator.name }}</span>
+    </div>
+
+    <div class="data-cell">
+      <div class="client-name">{{ task.client }}</div>
+      <div class="line-name">{{ task.line }}</div>
+    </div>
+
+    <div class="data-cell">{{ task.type }}</div>
+
+    <div class="data-cell">
+      <span
+        class="status-badge"
+        [ngClass]="{
+          'status-badge-new': task.status === 'New',
+          'status-badge-pending': task.status === 'Pending Review',
+          'status-badge-completed': task.status === 'Completed'
+        }"
+      >
+        <span
+          class="status-dot"
+          [ngClass]="{
+            'status-dot-new': task.status === 'New',
+            'status-dot-pending': task.status === 'Pending Review',
+            'status-dot-completed': task.status === 'Completed'
+          }"
+        ></span>
+        {{ task.status }}
+      </span>
+    </div>
+
+    <div class="data-cell actions-cell">
+      <div class="created-date">{{ task.created }}</div>
+      <button class="action-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="more-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+}

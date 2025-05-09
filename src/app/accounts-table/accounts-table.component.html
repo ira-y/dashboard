@@ -1,0 +1,86 @@
+<div class="accounts-table-wrapper">
+  <div class="table-header">
+    <div class="header-cell name-column">ACCOUNT NAME/TYPE</div>
+    <div class="header-cell">LINE</div>
+    <div class="header-cell">BROKER</div>
+    <div class="header-cell">RENEWAL DATE</div>
+    <div class="header-cell">PREMIUM</div>
+    <div class="header-cell">RATED PREMIUM</div>
+    <div class="header-cell">LOSS RATIO</div>
+    <div class="header-cell">APPETITE</div>
+    <div class="header-cell">STATUS</div>
+    <div class="header-cell">TRIAGE</div>
+    <div class="header-cell">WINNABILITY</div>
+    <div class="header-cell info-column"></div>
+  </div>
+
+  <div *ngFor="let account of accounts" class="table-row">
+    <div class="data-cell name-column">
+      <div class="account-name">{{ account.name }}</div>
+      <div class="account-type">{{ account.type }}</div>
+    </div>
+
+    <div class="data-cell">{{ account.line }}</div>
+
+    <div class="data-cell">{{ account.broker }}</div>
+
+    <div class="data-cell">{{ account.renewalDate }}</div>
+
+    <div class="data-cell premium-cell">{{ account.premium }}</div>
+
+    <div class="data-cell premium-cell">{{ account.ratedPremium }}</div>
+
+    <div class="data-cell">
+      <span class="loss-ratio-badge"
+            [ngClass]="getLossRatioBadgeClass(account.lossRatio)">
+        {{ account.lossRatio }}%
+      </span>
+    </div>
+
+    <div class="data-cell">
+      <span class="appetite-badge"
+            [ngClass]="getAppetiteBadgeClass(account.appetite)">
+        {{ account.appetite }}
+      </span>
+    </div>
+
+    <div class="data-cell">
+      <span class="status-badge"
+            [ngClass]="getStatusBadgeClass(account.status)">
+        <span class="status-dot"
+              [ngClass]="getStatusDotClass(account.status)"></span>
+        {{ account.status }}
+      </span>
+    </div>
+
+    <div class="data-cell">
+      <span class="triage-badge">
+        {{ account.triage }}
+      </span>
+    </div>
+
+    <div class="data-cell">
+      <div class="winnability-container">
+        <span class="winnability-text">{{ account.winnability }}</span>
+        <div class="winnability-dots">
+          <span class="dot" [ngClass]="{'dot-filled': getDotFilled(account.winnability, 1)}"></span>
+          <span class="dot" [ngClass]="{'dot-filled': getDotFilled(account.winnability, 2)}"></span>
+          <span class="dot" [ngClass]="{'dot-filled': getDotFilled(account.winnability, 3)}"></span>
+          <span class="dot" [ngClass]="{'dot-filled': getDotFilled(account.winnability, 4)}"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-cell info-column">
+      <button class="info-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="info-icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="!accounts || accounts.length === 0" class="no-data-message">
+    No accounts found.
+  </div>
+</div>

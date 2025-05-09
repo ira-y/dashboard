@@ -1,0 +1,288 @@
+:host {
+  width: 16.67%;
+}
+
+.portfolio-goals-container {
+  padding: 1.1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #1E2132;
+  color: #e2e8f0;
+  border-radius: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.portfolio-goals-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.goal-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-type {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.goal-target {
+  font-size: 0.6rem;
+  color: #94a3b8;
+}
+
+.progress-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  position: relative;
+  height: 2rem;
+  border-radius: 1rem;
+  overflow: visible;
+}
+
+.progress-bar.portfolio-loss-gradient {
+  margin-top: 1rem;
+}
+
+.portfolio-loss-gradient {
+  background: linear-gradient(to right,
+    #4ade80 0%,
+    #4ade80 48.2%,
+    #fbbf24 48.2%,
+    #fbbf24 55%,
+    #ef4444 55%,
+    #ef4444 100%
+  );
+  height: 25px;
+  width: 200px;
+}
+
+.renewal-retention-gradient {
+  position: relative;
+  background: linear-gradient(to right,
+    #dc2626 0%,
+    #dc2626 20%,
+    #fbbf24 20%,
+    #fbbf24 40%,
+    #4ade80 40%,
+    #4ade80 60%,
+    #fbbf24 60%,
+    #fbbf24 100%
+  );
+  height: 30px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.renewal-retention-gradient::before {
+  position: absolute;
+  left: 10%;
+  transform: translateX(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.business-target-gradient {
+  background: linear-gradient(to right,
+    rgba(59, 130, 246, 0.8) 0%,
+    rgba(59, 130, 246, 0.6) 50%,
+    rgba(59, 130, 246, 0.4) 100%
+  );
+  height: 25px;
+  width: 200px;
+}
+.target-indicator-container {
+  position: absolute;
+  left: 55%;
+  top: -115%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.target-indicator {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+.target-indicator.down {
+  border-top: 12px solid #3b82f6;
+}
+
+.target-indicator.up {
+  border-bottom: 12px solid #4ade80;
+  bottom: -12px;
+}
+
+.current-value {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.current-value-bubble {
+  position: absolute;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.75rem;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.target-value {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.percentage-indicator {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.text-green-500 {
+  color: #4ade80;
+  font-size: 14px;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.no-goals-message {
+  text-align: center;
+  padding: 2rem;
+  color: #94a3b8;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  border: 1px dashed #4b5563;
+}
+
+.loss-ratio-status-bar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 42px;
+}
+
+.status-text {
+  font-size: 10px;
+}
+
+.renewal-retention-status-bar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 33px;
+}
+
+
+.target-wrapper {
+  margin-bottom: 20px;
+}
+
+
+.target-title {
+  color: #8a95ad;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Arial', sans-serif;
+}
+
+.target-progress-container {
+  position: relative;
+}
+
+.target-progress-bar {
+  height: 30px;
+  background-color: #2c3246;
+  border-radius: 20px;
+}
+
+.target-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2d5db5 0%, #3769c5 100%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.current-value {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.target-value {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.target-percentage {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #616781;
+  font-size: 14px;
+  font-weight: bold;
+}

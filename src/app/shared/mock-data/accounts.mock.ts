@@ -1,0 +1,71 @@
+import { IAccount } from "../interfaces/account.interface";
+
+export const ACCOUNTS_MOCK: IAccount[] = [
+  {
+    id: '1',
+    name: 'NAMEX Tech Solutions',
+    type: 'Large Enterprise',
+    line: 'D&O Liability',
+    broker: 'Willis Towers',
+    renewalDate: '04/16/2025',
+    premium: 2300000,
+    ratedPremium: 2800000,
+    lossRatio: 25,
+    appetite: 'HIGH',
+    status: 'Active',
+    triage: 180,
+    winnability: 'Very Strong',
+    lossRatioColor: 'low'
+  },
+  {
+    id: '2',
+    name: 'Alliance Healthcare Systems',
+    type: 'Mid-Market',
+    line: 'Medical Malpractice',
+    broker: 'Aon Risk',
+    renewalDate: '06/30/2025',
+    premium: 1700000,
+    ratedPremium: 1900000,
+    lossRatio: 38,
+    appetite: 'MEDIUM',
+    status: 'Under review',
+    triage: 165,
+    winnability: 'Strong',
+    lossRatioColor: 'low'
+  },
+  {
+    id: '3',
+    name: 'Maritime Logistics Corp',
+    type: 'Shipping/Logistics',
+    line: 'Marine Cargo',
+    broker: 'Marsh McLennan',
+    renewalDate: '09/05/2025',
+    premium: 875000,
+    ratedPremium: 920000,
+    lossRatio: 25,
+    appetite: 'HIGH',
+    status: 'Active',
+    triage: 182,
+    winnability: 'Very Strong',
+    address: '175 Harbor Boulevard, Suite 205',
+    contacts: ['Michael Roberts'],
+    underwriter: 'Marsh McLennan',
+    lossRatioColor: 'low'
+  },
+  {
+    id: '4',
+    name: 'GreenField Energy Ltd',
+    type: 'Energy Sector',
+    line: 'Environmental Liability',
+    broker: 'Aon Risk',
+    renewalDate: '07/22/2025',
+    premium: 1200000,
+    ratedPremium: 1400000,
+    lossRatio: 67,
+    appetite: 'CAUTIOUS',
+    status: 'Under review',
+    triage: 158,
+    winnability: 'Medium',
+    lossRatioColor: 'low'
+  }
+];
