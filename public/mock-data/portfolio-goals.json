@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "type": "PORTFOLIO LOSS RATIO TARGET",
+    "target": 55,
+    "current": 48.2,
+    "percentage": 48.2,
+    "additionalInfo": "-6.8% (GOOD)",
+    "percentStatus": -6.8
+  },
+  {
+    "id": "2",
+    "type": "RENEWAL RETENTION",
+    "target": 85,
+    "current": 88,
+    "percentage": 88,
+    "additionalInfo": "ON TARGET"
+  },
+  {
+    "id": "3",
+    "type": "NEW BUSINESS TARGET",
+    "target": 8.1,
+    "current": 8.1,
+    "percentage": 67,
+    "additionalInfo": "$12M"
+  },
+  {
+    "id": "4",
+    "type": "ANNUAL GWP TARGET",
+    "target": 28.4,
+    "current": 28.4,
+    "percentage": 68,
+    "additionalInfo": "$42M"
+  }
+]

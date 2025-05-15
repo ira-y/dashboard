@@ -1,0 +1,22 @@
+<div class="widget-container">
+  <div class="header-container">
+    <div class="header">{{ header }}</div>
+
+    <div class="dots-container">
+      @for (dot of maxDots; track $index) {
+        <div class="dot" [class.active]="$index < dots"></div>
+      }
+    </div>
+  </div>
+
+  <div>
+    <span class="description">{{ description }}</span>
+    <span class="description-label">{{ descriptionLabel }}</span>
+  </div>
+
+  <div class="description-label">{{ subtitle }} </div>
+
+  <a class="factors-link">
+    {{ linkText }} →
+  </a>
+</div>

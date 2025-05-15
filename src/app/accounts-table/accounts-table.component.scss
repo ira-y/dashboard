@@ -1,0 +1,207 @@
+.accounts-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #374151;
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #374151;
+  align-items: center;
+
+  &:hover {
+    background-color: rgba(55, 65, 81, 0.2);
+  }
+}
+
+.header-cell, .data-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-column {
+  text-align: right;
+}
+
+.account-name {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.account-type {
+  font-size: 0.875rem;
+  color: #9CA3AF; // Светло-серый цвет
+}
+
+.premium-cell {
+  color: #3B82F6; // Синий цвет для премий
+  font-weight: 500;
+}
+
+// Стили для бейджа коэффициента убытков
+.loss-ratio-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.loss-ratio-green {
+  background-color: #10B981; // Зеленый фон
+  color: white;
+}
+
+.loss-ratio-yellow {
+  background-color: #F59E0B; // Желтый фон
+  color: white;
+}
+
+.loss-ratio-red {
+  background-color: #EF4444; // Красный фон
+  color: white;
+}
+
+// Стили для бейджа аппетита
+.appetite-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.appetite-high {
+  background-color: #1E3A8A; // Темно-синий фон
+  color: white;
+}
+
+.appetite-medium {
+  background-color: #1E3A8A; // Темно-синий фон
+  color: white;
+}
+
+.appetite-cautious {
+  background-color: #1E3A8A; // Темно-синий фон
+  color: white;
+}
+
+// Стили для бейджа статуса
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px; // Полностью скругленные углы
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: rgba(16, 185, 129, 0.2); // Полупрозрачный зеленый фон
+  color: #34D399; // Зеленый текст
+}
+
+.status-review {
+  background-color: rgba(245, 158, 11, 0.2); // Полупрозрачный желтый фон
+  color: #FBBF24; // Желтый текст
+}
+
+.status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%; // Круглый индикатор
+  margin-right: 0.375rem;
+}
+
+.status-dot-active {
+  background-color: #34D399; // Зеленый цвет
+}
+
+.status-dot-review {
+  background-color: #FBBF24; // Желтый цвет
+}
+
+// Стили для бейджа триажа
+.triage-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #1E3A8A; // Темно-синий фон
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+// Стили для индикатора выигрышности
+.winnability-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.winnability-text {
+  font-size: 0.875rem;
+  color: white;
+}
+
+.winnability-dots {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%; // Круглый индикатор
+  background-color: #4B5563; // Серый цвет для пустого индикатора
+}
+
+.dot-filled {
+  background-color: #3B82F6; // Синий цвет для заполненного индикатора
+}
+
+// Стили для кнопки информации
+.info-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6B7280; // Серый цвет
+  padding: 0.375rem;
+  border-radius: 50%; // Круглая кнопка
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: white;
+    background-color: rgba(107, 114, 128, 0.2); // Полупрозрачный серый фон при наведении
+  }
+}
+
+.info-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+// Сообщение при отсутствии данных
+.no-data-message {
+  text-align: center;
+  padding: 2rem;
+  color: #9CA3AF; // Светло-серый цвет
+  font-style: italic;
+}

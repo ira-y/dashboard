@@ -1,0 +1,123 @@
+.account-container {
+  padding-left: 20px;
+  background-color: #121622;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 700px;
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.breadcrumb-link {
+  color: #8a95ad;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #8a95ad;
+}
+
+.breadcrumb-current {
+  color: #3f79e9;
+  font-weight: 500;
+}
+
+/* Account header */
+.account-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+/* Company logo */
+.company-logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.company-logo img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+/* Company information */
+.company-info {
+  flex: 1;
+}
+
+.company-name {
+  margin: 0 0 8px 0;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.company-address {
+  margin: 0 0 15px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8a95ad;
+}
+
+/* Account metadata */
+.account-metadata {
+  display: flex;
+  gap: 48px;
+}
+
+.metadata-item {
+  min-width: 150px;
+}
+
+.metadata-label {
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8a95ad;
+}
+
+.metadata-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .account-header {
+    flex-direction: column;
+  }
+  
+  .company-logo {
+    margin-bottom: 16px;
+  }
+  
+  .account-metadata {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

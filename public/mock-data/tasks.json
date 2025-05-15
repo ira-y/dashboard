@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "originator": { "id": "SM", "name": "Sam Masters", "initials": "SM" },
+    "client": "NAMEX Tech Solutions",
+    "type": "Underwriter Referral",
+    "status": "New",
+    "created": "04/16/2025",
+    "line": "Cyber Liability"
+  },
+  {
+    "id": "2",
+    "originator": { "id": "AW", "name": "Annalise Willis", "initials": "AW" },
+    "client": "Maritime Logistics Corp",
+    "type": "Underwriter Referral",
+    "status": "New",
+    "created": "04/20/2025",
+    "line": "Marine Cargo"
+  },
+  {
+    "id": "3",
+    "originator": { "id": "PD", "name": "Patrick Devenport", "initials": "PD" },
+    "client": "GreenField Energy Ltd",
+    "type": "Loss Control Request",
+    "status": "New",
+    "created": "04/16/2025",
+    "line": "Environmental"
+  },
+  {
+    "id": "4",
+    "originator": { "id": "AK", "name": "Ana Killian", "initials": "AK" },
+    "client": "NorthStar Financial Group",
+    "type": "Underwriter Referral",
+    "status": "Pending Review",
+    "created": "04/22/2025",
+    "line": "D&O Liability"
+  },
+  {
+    "id": "5",
+    "originator": { "id": "AK", "name": "Ana Killian", "initials": "AK" },
+    "client": "Alliance Healthcare Systems",
+    "type": "Email",
+    "status": "Completed",
+    "created": "04/28/2025",
+    "line": "Medical Malpractice"
+  },
+  {
+    "id": "6",
+    "originator": { "id": "MK", "name": "Me", "initials": "MK" },
+    "client": "QuantumTech Industries",
+    "type": "Email",
+    "status": "Completed",
+    "created": "04/20/2025",
+    "line": "Product Liability"
+  }
+]

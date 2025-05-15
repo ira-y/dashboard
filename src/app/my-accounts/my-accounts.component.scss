@@ -1,0 +1,116 @@
+.my-accounts-container {
+  background-color: #1E2132; // Темно-синий фон компонента
+  border-radius: 1.3rem;
+  padding: 1.5rem;
+  color: white;
+  margin-top: 10px;
+}
+
+.my-accounts-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-accounts-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.search-and-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.search-input {
+  flex-grow: 0;
+  margin-right: 0.5rem;
+}
+
+.search-field {
+  background-color: #111827; // Более темный фон для поля ввода
+  border: 1px solid #374151; // Темно-серая граница
+  border-radius: 100px;
+  color: rgb(131, 131, 131);
+  padding: 0.5rem 1rem;
+  width: 20rem; // Фиксированная ширина для поля поиска
+  font-size: 0.875rem;
+  search-field
+  &::placeholder {
+    color: #6B7280; // Светло-серый цвет для плейсхолдера
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #3B82F6; // Синий цвет границы при фокусе
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.5); // Легкое свечение при фокусе
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.action-button {
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.filter-button,
+.sort-button,
+.group-button {
+  background-color: transparent;
+  border: 1px solid #374151; // Темно-серая граница
+  color: #9CA3AF; // Светло-серый текст
+  
+  &:hover {
+    background-color: #374151; // Темно-серый фон при наведении
+    color: white;
+  }
+}
+
+.new-button {
+  background-color: #3B82F6; // Синий фон
+  color: white;
+  
+  &:hover {
+    background-color: #2563EB; // Более темный синий при наведении
+  }
+}
+
+// Временный стиль для плейсхолдера таблицы
+.table-placeholder {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #1E2132;
+  border-radius: 0.375rem;
+  text-align: center;
+  color: #9CA3AF;
+}
+
+// Медиа-запросы для адаптивности
+@media (max-width: 768px) {
+  .search-and-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .search-field {
+    width: 100%;
+  }
+  
+  .action-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

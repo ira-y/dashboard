@@ -1,0 +1,28 @@
+.widget-chart {
+  background-color: #202337;
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.widget-chart-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.widget-chart-content {
+  width: 100%;
+  height: auto;
+}
+
+/* Dark theme colors and variables */
+:host {
+  --primary-color: #3c7eff;
+  --background-color: #1a1b26;
+  --text-color: white;
+  --secondary-text-color: rgba(255, 255, 255, 0.7);
+}

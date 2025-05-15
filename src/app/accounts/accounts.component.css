@@ -1,0 +1,39 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.breadcrumb-link {
+  color: #8a95ad;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: #8a95ad;
+}
+
+.breadcrumb-current {
+  color: #3f79e9;
+  font-weight: 500;
+}
+
+/* Account header */
+.account-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}

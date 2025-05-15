@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Performance Metrics</h1>
+
+  <div class="main">
+    @for (widget of performanceWidgets; track $index) {
+      <app-widget
+        [header]="widget.header"
+        [dots]="widget.dots || 0"
+        [description]="widget.description"
+        [descriptionLabel]="widget.descriptionLabel || ''"
+        [subtitle]="widget.subtitle || ''"
+        [linkText]="widget.linkText || ''"
+      ></app-widget>
+    }
+
+    <app-widget-chart header="Exposure Distribution">
+      <app-exposure-distribution></app-exposure-distribution>
+    </app-widget-chart>
+  </div>
+</div>

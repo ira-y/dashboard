@@ -1,0 +1,19 @@
+<div class="work-queue-container">
+  <h2 class="work-queue-title">Work Queue</h2>
+
+  <div class="tabs-container">
+    <button class="tab-button tab-button-active">
+      Assigned to me(12)
+    </button>
+    <button class="tab-button tab-button-inactive">
+      Pending Review (8)
+    </button>
+    <button class="tab-button tab-button-inactive">
+      Referrals (3)
+    </button>
+  </div>
+
+  @if (tasks$ | async; as tasks) {
+    <app-work-queue-table [tasks]="tasks"></app-work-queue-table>
+  }
+</div>

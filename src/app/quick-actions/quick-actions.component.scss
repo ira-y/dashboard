@@ -1,0 +1,43 @@
+.quick-actions-container {
+  background-color: #1E2132; // Темно-синий фон компонента
+  border-radius: 1.3rem;
+  padding: 1rem;
+  color: white;
+  margin-left: 12px;
+  height: 290px;
+  width: 240px;
+}
+
+.quick-actions-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.quick-actions-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem; // Отступ между кнопками
+}
+
+.action-button {
+  background-color: #3B82F6; // Синий цвет кнопок
+  color: white;
+  border: none;
+  border-radius: 9999px; // Полностью закругленные края
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.action-button:hover {
+  background-color: #2563EB; // Более темный синий при наведении
+}
+
+.action-button:active {
+  background-color: #1D4ED8; // Еще более темный синий при нажатии
+}
