@@ -1,0 +1,37 @@
+<div class="indicator-container" [ngClass]="indicatorClass">
+  <div class="indicator-header">
+    @if (arrowDirection === 'up') {
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="16 12 12 8 8 12" />
+        <line x1="12" y1="16" x2="12" y2="8" />
+      </svg>
+    } @else {
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="8 12 12 16 16 12" />
+        <line x1="12" y1="8" x2="12" y2="16" />
+      </svg>
+    }
+    <span>{{ title }}</span>
+  </div>
+
+  <div class="indicator-list">
+    @for (indicator of indicators; track indicator.id) {
+      <div class="indicator-item">
+        <div class="indicator-number">
+          {{ indicator.id }}
+        </div>
+        <div class="indicator-content">
+          <div class="indicator-label">{{ indicator.label }}</div>
+          <div class="indicator-data">
+            <div class="progress-bar-container">
+              <div class="progress-bar" [ngStyle]="{ width: getProgressBarStyle(indicator.percentage)}"></div>
+            </div>
+            <span class="percentage">{{ getPercentageDisplay(indicator.percentage) }}</span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

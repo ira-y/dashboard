@@ -1,0 +1,40 @@
+<section>
+  <h2 class="title">Account Details</h2>
+
+  <div class="wrapper">
+    <div class="side-bar">
+      <div class="nav-container">
+        <div class="nav-header">
+          <h2 class="nav-title">DECISION SUPPORT</h2>
+          <div class="step-indicator">{{ currentStep }}</div>
+        </div>
+
+        <nav class="nav-list">
+          @for (item of navItems; track item.title) {
+            <a
+              class="nav-item"
+              [class.active]="item.active"
+              [routerLink]=""
+              (click)="setActive($index)">
+              {{ item.title }}
+            </a>
+          }
+        </nav>
+      </div>
+
+      <div class="nav-header">
+        <h2 class="nav-title">RISK ASSESSMENT</h2>
+        <div class="step-indicator">{{ currentStep + 1 }}</div>
+      </div>
+
+      <div class="nav-header">
+        <h2 class="nav-title">DOCUMENT AND COMPLIANCE</h2>
+        <div class="step-indicator">{{ currentStep + 2 }}</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <app-winnability></app-winnability>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,114 @@
+.indicator-container {
+  background-color: #262a44;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  font-family: sans-serif;
+  display: block;
+
+}
+
+.indicator-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.indicator-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.indicator-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.indicator-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.indicator-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.indicator-label {
+  font-size: 1.125rem;
+}
+
+.indicator-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar-container {
+  flex-grow: 1;
+  margin-right: 0.75rem;
+}
+
+.progress-bar {
+  height: 1.1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.percentage {
+  font-weight: 500;
+  font-size: 1.125rem;
+  width: 3.5rem;
+  text-align: right;
+  color: #8a95ad;
+}
+
+/* Increasing specific styles */
+.increasing .indicator-number {
+  border: 2px solid #3cba92;
+  color: #3cba92;
+}
+
+.increasing .progress-bar {
+  background: linear-gradient(90deg, rgba(30, 33, 46, 1) 0%, rgba(67, 192, 137, 1) 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.increasing .percentage {
+  color: #8a95ad;
+}
+
+.increasing .arrow-icon {
+  color: #3cba92;
+}
+
+/* Decreasing specific styles */
+.decreasing .indicator-number {
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+}
+
+.decreasing .progress-bar {
+  background: linear-gradient(90deg, rgba(30, 33, 46, 1) 0%, #f1c40f 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.decreasing .percentage {
+  color: #8a95ad;
+}
+
+.decreasing .arrow-icon {
+  color: #f1c40f;
+}

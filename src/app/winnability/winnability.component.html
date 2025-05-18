@@ -1,0 +1,18 @@
+<div class="section">
+  @for (widget of widgets; track $index) {
+    <app-widget-chart [header]="widget.header">
+      <ng-container *ngComponentOutlet="getComponent(widget.chart)"></ng-container>
+    </app-widget-chart>
+  }
+</div>
+
+<div class="winnability-statistics">
+  @for (statistic of winnabilityStatistics; track $index) {
+    <app-winnability-statistics
+      [type]="statistic.type"
+      [indicators]="statistic.indicators"
+    ></app-winnability-statistics>
+  }
+</div>
+
+<app-ai-recommendations></app-ai-recommendations>

@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+app-widget-chart::ng-deep .widget-chart{
+  height: 185px;
+}
+
+app-widget-chart {
+  flex: 1;
+  max-width: calc(33% - 5px);
+}
+
+.winnability-statistics {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px; /* This creates the 12px margin between components */
+  width: 100%;
+  margin-top: 20px
+}
+
+app-winnability-statistics {
+  flex: 1; 
+  max-width: calc(50% - 6px); 
+}

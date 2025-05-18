@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 /**
@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './needs-attention.component.html',
-  styleUrls: ['./needs-attention.component.css']
+  styleUrls: ['./needs-attention.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NeedsAttentionComponent {
 }

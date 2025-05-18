@@ -1,0 +1,14 @@
+<section class="policies-section">
+  <h2 class="policies-title">Policies</h2>
+  
+  <div class="policies-container">
+    @for (item of performanceWidgets; track $index) {
+    <app-widget-policy
+      [logoName]="item.logoName"
+      [title]="item.title"
+      [premium]="item.premium"
+      [effDate]="item.effDate || '---'"
+    ></app-widget-policy>
+    }
+  </div>
+</section>

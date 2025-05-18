@@ -1,0 +1,13 @@
+<div class="wrapper">
+  @for (item of positionData; track item.type) {
+    <div class="exposure-item">
+      <div class="bar-container">
+        <div class="bar" [style.width.%]="item.percentage"></div>
+      </div>
+      <div class="exposure-label">
+        <span class="exposure-type">{{ item.type }}:</span>
+        <span class="exposure-value">{{ item.displayValue }}</span>
+      </div>
+    </div>
+  }
+</div>

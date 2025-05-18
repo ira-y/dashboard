@@ -1,0 +1,48 @@
+.score-card {
+  background-color: #262a44;
+  border-radius: 16px;
+  color: white;
+  max-width: 350px;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.percentage {
+  font-size: 44px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 6px 14px;
+  border: 1px solid #3f79e9;
+}
+
+.dots {
+  display: flex;
+  gap: 3px;
+  margin-right: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #3f79e9;
+}
+
+.label {
+  color: #3f79e9;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #262a44;
+  border-radius: 16px;
+}
+
+.exposure-item {
+  display: flex;
+  align-items: center;
+}
+
+.bar-container {
+  height: 18px;
+  background-color: rgb(36, 40, 54);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 45%;
+}
+
+.exposure-label {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(90deg,rgba(41, 45, 63, 1) 0%, #4285ff 100%);
+}
+
+.exposure-type {
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.exposure-value {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
