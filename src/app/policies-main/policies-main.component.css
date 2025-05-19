@@ -1,39 +1,44 @@
-.communication-container {
+.policies-container {
   background-color: #1c1d31;
   color: white;
   padding: 20px;
-  border-radius: 12px;
   font-family: Arial, sans-serif;
   width: 100%;
-  margin-top: 15px;
+  border-radius: 20px;
 }
 
-.communication-title {
+.policies-title {
   font-size: 28px;
   font-weight: 500;
-  padding-left: 10px;
+  margin: 20px 0 20px 0;
   color: white;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .search-controls {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   margin-bottom: 20px;
+  background-color: #1c1d31;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 20px;
+}
+
+.search-input-wrapper {
+  flex: 1;
+  margin-right: 15px;
 }
 
 .search-input {
-  width: 300px;
+  width: 100%;
   background-color: #1c1d31;
   color: #ffffff;
-  border: 1px solid #5a5d7a;
-  padding: 6px 10px;
+  border: none;
+  padding: 8px 10px;
   font-size: 16px;
   outline: none;
+  width: 350px;
+  border: 1px solid rgba(80, 80, 80, 0.397);
   border-radius: 20px;
-  margin-right: 10px;
 }
 
 .search-input::placeholder {
@@ -50,18 +55,12 @@
   color: #4b7bec;
   border: 1px solid #4b7bec;
   border-radius: 20px;
-  padding: 6px 18px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 100px;
 }
 
 .control-button:hover {
   background-color: rgba(75, 123, 236, 0.1);
-}
-
-.messages-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }

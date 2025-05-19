@@ -1,0 +1,13 @@
+  <div class="message-container">
+    @for (item of messageWidgets; track $index) {
+      <app-message-card
+        [isNew]="item.isNew"
+        [status]="item.status || '' "
+        [title]="item.title"
+        [sender]="item.sender"
+        [date]="item.date"
+        [content]="item.content"
+        [attachmentsCount]="item.attachmentsCount || 0"
+      ></app-message-card>
+    }
+  </div>

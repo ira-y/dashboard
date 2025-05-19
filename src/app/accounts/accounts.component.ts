@@ -7,10 +7,12 @@ import { InfoAccountsComponent } from "../info-accounts/info-accounts.component"
 import { NeedsAttentionComponent } from "../needs-attention/needs-attention.component";
 import { PerformanceMetricsComponent } from "../performance-metrics/performance-metrics.component";
 import { PoliciasComponent } from "../policies/policies.component";
+import { CommunicationComponent } from "../communication/communication.component";
+import { PoliciesMainComponent } from "../policies-main/policies-main.component";
 
 @Component({
   selector: 'app-accounts',
-  imports: [InfoAccountsComponent, NeedsAttentionComponent, HeaderAccountsCompoinent, PerformanceMetricsComponent, PoliciasComponent, AccountStatusComponent, ComplianceDocumentationComponent, AccountDetailsComponent],
+  imports: [InfoAccountsComponent, NeedsAttentionComponent, HeaderAccountsCompoinent, PerformanceMetricsComponent, PoliciasComponent, AccountStatusComponent, ComplianceDocumentationComponent, AccountDetailsComponent, CommunicationComponent, PoliciesMainComponent],
   templateUrl: './accounts.component.html',
   styleUrl: './accounts.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush

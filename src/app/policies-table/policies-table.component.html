@@ -1,0 +1,93 @@
+<div class="table-container">
+  <table class="policies-table">
+    <thead>
+      <tr>
+        <th class="line-column">LINE</th>
+        <th>EFF. DATE</th>
+        <th>EXP. DATE</th>
+        <th>STATUS</th>
+        <th>EXPIRING TECH</th>
+        <th>EXPIRING PREMIUM</th>
+        <th>RENEWAL TO TECH</th>
+        <th>RENEWAL TECH</th>
+        <th>RENEWAL PREMIUM</th>
+        <th>RATE CHANGE</th>
+        <th>LOSS RATIO</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (policy of policies; track policy.id) {
+        <tr>
+          <td class="line-column">
+            <div class="policy-line">
+              <div class="icon" [style.background-color]="policy.iconColor">{{ policy.icon }}</div>
+              <div class="policy-name">
+                <div class="name">{{ policy.name }}</div>
+                <div class="id">{{ policy.id }}</div>
+              </div>
+            </div>
+          </td>
+          <td>{{ policy.effDate }}</td>
+          <td>{{ policy.expDate }}</td>
+          <td>
+            <div class="status-pill" [class.active]="policy.status === 'Active'" [class.pending]="policy.status === 'Pending'">
+              @if (policy.status === 'Active') {
+                <div class="status-dot active"></div>
+              } @else {
+                <div class="status-dot pending"></div>
+              }
+              {{ policy.status }}
+            </div>
+          </td>
+          <td>{{ policy.expiringTech }}</td>
+          <td>{{ policy.expiringPremium }}</td>
+          <td>{{ policy.renewalToTech }}</td>
+          <td>{{ policy.renewalTech }}</td>
+          <td>{{ policy.renewalPremium }}</td>
+          <td [class.rate-change-red]="policy.rateChangeColor === 'red'" 
+              [class.rate-change-green]="policy.rateChangeColor === 'green'">
+            {{ policy.rateChange }}
+          </td>
+          <td>
+            <div class="loss-ratio-container">
+              <div class="loss-ratio-pill" 
+                  [class.loss-ratio-green]="policy.lossRatioColor === 'green'"
+                  [class.loss-ratio-yellow]="policy.lossRatioColor === 'yellow'"
+                  [class.loss-ratio-red]="policy.lossRatioColor === 'red'">
+                {{ policy.lossRatio }}
+              </div>
+            </div>
+          </td>
+          <td>
+            <button class="more-info-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="1"></circle>
+                <circle cx="12" cy="5" r="1"></circle>
+                <circle cx="12" cy="19" r="1"></circle>
+              </svg>
+            </button>
+          </td>
+        </tr>
+      }
+      <!-- Строка с итогами -->
+      <tr class="totals-row">
+        <td colspan="4" class="totals-text">TOTAL ({{ getTotals().count }})</td>
+        <td>{{ getTotals().expiringTech }}</td>
+        <td>{{ getTotals().expiringPremium }}</td>
+        <td>{{ getTotals().renewalToTech }}</td>
+        <td>{{ getTotals().renewalTech }}</td>
+        <td>{{ getTotals().renewalPremium }}</td>
+        <td>{{ getTotals().rateChange }}</td>
+        <td>
+          <div class="loss-ratio-container">
+            <div class="loss-ratio-pill loss-ratio-yellow">
+              {{ getTotals().lossRatio }}
+            </div>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

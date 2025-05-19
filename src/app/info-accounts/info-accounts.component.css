@@ -105,19 +105,3 @@
   font-weight: 500;
   color: #fff;
 }
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .account-header {
-    flex-direction: column;
-  }
-  
-  .company-logo {
-    margin-bottom: 16px;
-  }
-  
-  .account-metadata {
-    flex-direction: column;
-    gap: 16px;
-  }
-}

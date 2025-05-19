@@ -1,8 +1,8 @@
-<h1 class="communication-title">Communication</h1>
-<div class="communication-container">
+<h1 class="policies-title">Policies</h1>
+<div class="policies-container">
   
   <div class="search-controls">
-    <div>
+    <div class="search-input-wrapper">
       <input type="text" class="search-input" placeholder="Search">
     </div>
     
@@ -10,10 +10,7 @@
       <button class="control-button filter-button">Filter</button>
       <button class="control-button group-button">Group</button>
     </div>
-    
   </div>
-  <div class="messages-container">
-    <app-message></app-message>
-    <ng-content></ng-content>
-  </div>
+  
+  <app-policies-table></app-policies-table>
 </div>

@@ -1,0 +1,47 @@
+.message-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Первая колонка (элементы 0 и 2) */
+.message-container > app-message-card:nth-child(1),
+.message-container > app-message-card:nth-child(3) {
+  grid-column: 1;
+}
+
+/* Вторая колонка (элемент 1 и последующие группы) */
+.message-container > app-message-card:nth-child(2),
+.message-container > app-message-card:nth-child(4),
+.message-container > app-message-card:nth-child(5) {
+  grid-column: 2;
+}
+
+/* Группировка нескольких сообщений во второй колонке */
+.message-container > app-message-card:nth-child(2) {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.message-container > app-message-card:nth-child(4) {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.message-container > app-message-card:nth-child(5) {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 1px solid #2e3150;
+}
+
+.message-container {
+  padding: 20px;
+}
+
+/* Стили для правой колонки с группой сообщений */
+.message-container > app-message-card:nth-child(n+2):nth-child(-n+5) {
+  background-color: #1c1d31;
+}
