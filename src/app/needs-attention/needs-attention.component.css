@@ -8,7 +8,6 @@
   border: 1px solid #e6b012;
 }
 
-/* Header section */
 .attention-header {
   display: flex;
   align-items: center;
@@ -42,7 +41,6 @@
   margin: 0;
 }
 
-/* Attention items */
 .attention-items {
   display: flex;
   gap: 10px;
@@ -79,7 +77,6 @@
   text-decoration: underline;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .attention-items {
     flex-direction: column;

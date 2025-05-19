@@ -75,7 +75,6 @@
   color: #8a95ad;
 }
 
-/* Increasing specific styles */
 .increasing .indicator-number {
   border: 2px solid #3cba92;
   color: #3cba92;
@@ -94,7 +93,6 @@
   color: #3cba92;
 }
 
-/* Decreasing specific styles */
 .decreasing .indicator-number {
   border: 2px solid #f1c40f;
   color: #f1c40f;

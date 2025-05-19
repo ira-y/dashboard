@@ -1,5 +1,5 @@
 .quick-actions-container {
-  background-color: #1E2132; // Темно-синий фон компонента
+  background-color: #1E2132; 
   border-radius: 1.3rem;
   padding: 1rem;
   color: white;
@@ -17,14 +17,14 @@
 .quick-actions-buttons {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem; // Отступ между кнопками
+  gap: 0.55rem; 
 }
 
 .action-button {
-  background-color: #3B82F6; // Синий цвет кнопок
+  background-color: #3B82F6;
   color: white;
   border: none;
-  border-radius: 9999px; // Полностью закругленные края
+  border-radius: 9999px; 
   padding: 0.4rem;
   font-size: 0.8rem;
   font-weight: 500;
@@ -35,9 +35,9 @@
 }
 
 .action-button:hover {
-  background-color: #2563EB; // Более темный синий при наведении
+  background-color: #2563EB; 
 }
 
 .action-button:active {
-  background-color: #1D4ED8; // Еще более темный синий при нажатии
+  background-color: #1D4ED8; 
 }

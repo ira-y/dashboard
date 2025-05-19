@@ -33,6 +33,5 @@ export class WinnabilityStatisticsComponent {
 
   getProgressBarStyle(percentage: number): string {
     return `${Math.abs(percentage) * 5}px`;
-    // return `width: ${Math.abs(percentage)}px`;
   }
 }

@@ -11,19 +11,5 @@ import { AccountsTableComponent } from "../accounts-table/accounts-table.compone
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MyAccountsComponent {
-  onFilterClick(): void {
-  }
 
-
-  onSortClick(): void {
-  }
-
-  onGroupClick(): void {
-  }
-
-  onNewClick(): void {
-  }
-
-  onSearchChange(event: Event): void {
-  }
 }

@@ -109,7 +109,6 @@ export class PoliciesTableComponent {
     }
   ];
 
-  // Рассчитываем итоги
   getTotals() {
     return {
       count: this.policies.length,

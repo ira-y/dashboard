@@ -22,25 +22,6 @@ export class WorkQueueComponent {
 
 
   changeTab(tab: 'assigned' | 'pending' | 'referrals'): void {
-    // For future implementation when tabs become functional
     this.activeTab = tab;
-
-    // If needed, we can filter tasks based on tab here
-    // switch (tab) {
-    //   case 'assigned':
-    //     this.tasks = this.workQueueService.getAssignedTasks();
-    //     break;
-    //   case 'pending':
-    //     this.tasks = this.workQueueService.getPendingReviewTasks();
-    //     break;
-    //   case 'referrals':
-    //     this.tasks = this.workQueueService.getReferralTasks();
-    //     break;
-    // }
   }
-
-  // onMoreActions(taskId: string): void {
-  //   // For future implementation when actions become functional
-  //   console.log('More actions clicked for task', taskId);
-  // }
 }

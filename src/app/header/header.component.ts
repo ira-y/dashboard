@@ -18,7 +18,4 @@ export class HeaderComponent {
   taskCount: number = 12;
 
   constructor(private store: Store) { }
-  ngOnInit(): void {
-    // Here you could fetch the actual user name and task count from a service
-  }
 }

@@ -77,7 +77,6 @@
   margin-left: 5px
 }
 
-
 .progress-line.completed {
   background-color: #41D79D;
   background-image: linear-gradient(to right, #41D79D 70%, transparent 0%);

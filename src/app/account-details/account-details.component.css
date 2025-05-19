@@ -26,9 +26,8 @@ section {
 .side-bar::after {
   content: '';
   position: absolute;
-  top: 2rem; /* Top padding */
-  bottom: 2rem; /* Bottom padding */
-  /* right: 33%; Adjust this value based on where you want the line */
+  top: 2rem;
+  bottom: 2rem;
   right: 0;
   border-right: 1px dashed rgba(255, 255, 255, 0.3);
   z-index: 1;

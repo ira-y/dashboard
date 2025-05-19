@@ -82,7 +82,7 @@ export class PoliciesService {
       currentPremium: policy.premium,
       renewalPremium,
       renewalChange,
-      effectiveDate: policy.expiryDate, // Current expiry becomes new effective date
+      effectiveDate: policy.expiryDate, 
       expiryDate,
       status: 'Active'
     };

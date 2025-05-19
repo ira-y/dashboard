@@ -24,7 +24,7 @@ app-widget-chart {
 .winnability-statistics {
   display: flex;
   justify-content: space-between;
-  gap: 12px; /* This creates the 12px margin between components */
+  gap: 12px;
   width: 100%;
   margin-top: 20px
 }

@@ -10,5 +10,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MarketIntelligenceComponent {
-  // Компонент не требует сложной логики, так как данные захардкожены в шаблоне
 }

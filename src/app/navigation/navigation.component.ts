@@ -38,7 +38,6 @@ export class NavigationComponent implements AfterViewInit {
   ];
 
   ngAfterViewInit() {
-    // Check if scroll is needed
     this.checkScrollButtons();
   }
 
@@ -49,9 +48,7 @@ export class NavigationComponent implements AfterViewInit {
 
   checkScrollButtons(): void {
     const container = this.navItemsContainer.nativeElement;
-    // Logic to check if scroll is possible
     const hasHorizontalScroll = container.scrollWidth > container.clientWidth;
-    // You can use this to conditionally show/hide scroll buttons
   }
 
   scrollLeft(): void {

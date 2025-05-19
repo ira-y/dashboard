@@ -6,7 +6,6 @@
   width: 700px;
 }
 
-/* Breadcrumb navigation */
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -35,14 +34,12 @@
   font-weight: 500;
 }
 
-/* Account header */
 .account-header {
   display: flex;
   align-items: flex-start;
   margin-bottom: 32px;
 }
 
-/* Company logo */
 .company-logo {
   flex-shrink: 0;
   width: 80px;
@@ -61,7 +58,6 @@
   max-height: 75%;
 }
 
-/* Company information */
 .company-info {
   flex: 1;
 }
@@ -81,7 +77,6 @@
   color: #8a95ad;
 }
 
-/* Account metadata */
 .account-metadata {
   display: flex;
   gap: 48px;
